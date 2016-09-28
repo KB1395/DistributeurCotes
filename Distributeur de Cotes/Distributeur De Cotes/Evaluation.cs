@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Distributeur_De_Cotes
 {
-    class Evaluation
+    abstract class Evaluation
     {
         private Activity activity;
         private int note;
@@ -22,9 +22,12 @@ namespace Distributeur_De_Cotes
                 activity = value;
             }
         }
-        public int Note()
+        public abstract int Note();
+        
+        
+        public Evaluation(Activity activity)
         {
-            return note;
+            this.Activity = activity;
         }
     }
 }

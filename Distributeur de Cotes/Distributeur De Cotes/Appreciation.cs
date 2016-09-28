@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Distributeur_De_Cotes
 {
-    class Appreciation
+    class Appreciation : Evaluation
     {
+        public Appreciation(Activity activity) : base(activity)
+        {
+        }
     }
 }
