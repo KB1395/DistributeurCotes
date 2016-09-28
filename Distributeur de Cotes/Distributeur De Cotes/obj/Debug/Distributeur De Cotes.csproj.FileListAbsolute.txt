@@ -1,0 +1,9 @@
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\bin\Debug\Distributeur De Cotes.exe.config
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\bin\Debug\Distributeur De Cotes.exe
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\bin\Debug\Distributeur De Cotes.pdb
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\obj\Debug\Distributeur De Cotes.csprojResolveAssemblyReference.cache
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\obj\Debug\Distributeur De Cotes.exe
+c:\users\paolo\documents\visual studio 2015\Projects\Distributeur de Cotes\Distributeur De Cotes\obj\Debug\Distributeur De Cotes.pdb
+C:\Data\Cours\BLOC 3\PI\Labo2\Distributeur de Cotes\Distributeur De Cotes\bin\Debug\Distributeur De Cotes.exe.config
+C:\Data\Cours\BLOC 3\PI\Labo2\Distributeur de Cotes\Distributeur De Cotes\obj\Debug\Distributeur De Cotes.exe
+C:\Data\Cours\BLOC 3\PI\Labo2\Distributeur de Cotes\Distributeur De Cotes\obj\Debug\Distributeur De Cotes.pdb
