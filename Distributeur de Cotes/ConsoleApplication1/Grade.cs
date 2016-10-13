@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Distributeur_De_Cotes
+namespace ConsoleApplication1
 {
-    class Grade:Evaluation
+    public class Grade:Evaluation
     {
         public int grade;
         public Grade(Activity activity, int grade):base(activity)

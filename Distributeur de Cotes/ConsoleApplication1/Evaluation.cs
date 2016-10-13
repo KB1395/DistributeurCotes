@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Distributeur_De_Cotes
+namespace ConsoleApplication1
 {
     abstract class Evaluation
     {
-        private Activity activity;
+        public Activity activity;
         private int note;
         public Activity Activity
         

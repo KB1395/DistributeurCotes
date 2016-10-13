@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Distributeur_De_Cotes;
+using ConsoleApplication1;
 
-namespace Distributeur_De_Cotes
+namespace ConsoleApplication1
 {
     class Activity
     {
@@ -57,7 +57,7 @@ namespace Distributeur_De_Cotes
                 teacher = value;
             }
         }
-        public Activity(int ects, string name, string code, Teacher teacher)
+        public Activity( string name, string code, Teacher teacher, int ects)
         {
             
             ECTS = ects;
