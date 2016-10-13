@@ -12,40 +12,33 @@ namespace ConsoleApplication1
 
         public Student(string lastName, string firstName) : base(lastName, firstName)
         {
-            this.evaluations = new List<Evaluation>();
+            evaluations = new List<Evaluation>();
         }
 
         public void Add(Evaluation evaluation)
         {
-            this.evaluations.Add(evaluation);
+            evaluations.Add(evaluation);
         }
 
-        
+        private double avg;
+        private double bullavg;
         public double Average()
         {
             var sum = 0;
             foreach (var n in evaluations)
                 sum += n.Note();
+            avg= sum / evaluations.Count;
 
-            return sum / this.evaluations.Count;
+            return avg;
         }
 
-        // Constructs a string representing the average score for each activity of the student
         public string Bulletin()
         {
-
-            // The evaluations can be assigned to any activity and are not sorted
-            // We first need to sort them by activity to be able to take an average
-            // For this we create a dictionary (hashmap) where the key is an activity and the value is a tuple of two integers
-            // representing the running sum of the scores for that activity and the number of evaluations.
-            // For each activity we check if it already exists in the dictionary, if it does we update the sum and number
-            // otherwise we add the activity
             Dictionary<Activity, Tuple<int, int>> gradesPerActivity = new Dictionary<Activity, Tuple<int, int>>();
 
             foreach (var g in this.evaluations)
             {
-                // We try to access a given key in the dictionary, if it does not exist it will throw an exception
-                // and we know we have to add it to the dictionary.
+                
                 try
                 {
                     Tuple<int, int> t = gradesPerActivity[g.Activity];
@@ -57,13 +50,14 @@ namespace ConsoleApplication1
                 }
             }
 
-            // We construct the string to print out, beginning with the name of the student on the first line
+            
             string bulletin = this.Lastname + " " + this.Firstname + "\n";
 
-            // And a line for every activity with the code, name, ects and score
+            
             foreach (KeyValuePair<Activity, Tuple<int, int>> entry in gradesPerActivity)
             {
-                bulletin += entry.Key.Code + " " + entry.Key.Name + " " + entry.Key.ECTS + " " + entry.Value.Item1 / entry.Value.Item2 + "\n";
+                bullavg = entry.Value.Item1 / entry.Value.Item2;
+                bulletin += entry.Key.Code + " " + entry.Key.Name + " " + entry.Key.ECTS + " " + bullavg + "\n";
             }
 
             bulletin += "\n\n";
