@@ -9,7 +9,7 @@ namespace ConsoleApplication1
     abstract class Evaluation
     {
         public Activity activity;
-        private int note;
+        
         public Activity Activity
         
         {
@@ -29,5 +29,6 @@ namespace ConsoleApplication1
         {
             this.Activity = activity;
         }
+        
     }
 }

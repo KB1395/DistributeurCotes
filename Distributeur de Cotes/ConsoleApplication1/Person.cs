@@ -33,8 +33,8 @@ namespace ConsoleApplication1
         }
         public Person(string firstname, string lastname)
         {
-            Firstname = firstname;
-            Lastname = lastname;
+            this.Firstname = firstname;
+            this.Lastname = lastname;
 
         }
         public string DisplayName()

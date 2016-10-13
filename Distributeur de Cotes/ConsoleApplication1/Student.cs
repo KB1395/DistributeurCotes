@@ -15,16 +15,16 @@ namespace ConsoleApplication1
             this.evaluations = new List<Evaluation>();
         }
 
-        public void Add(Evaluation eval)
+        public void Add(Evaluation evaluation)
         {
-            this.evaluations.Add(eval);
+            this.evaluations.Add(evaluation);
         }
 
-        // Returns the average of all the evaluations from all activities
+        
         public double Average()
         {
             var sum = 0;
-            foreach (var n in this.evaluations)
+            foreach (var n in evaluations)
                 sum += n.Note();
 
             return sum / this.evaluations.Count;

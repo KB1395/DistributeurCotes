@@ -9,9 +9,9 @@ namespace ConsoleApplication1
 {
     class Activity
     {
-        private string name,code;
-        private Teacher teacher;
-        private int ects;
+        public string name,code;
+        public Teacher teacher;
+        public int ects;
         public string Name
         {
             get
